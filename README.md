@@ -23,3 +23,6 @@
 ⚠️ 注意事项
 少量生物可能因原生 AI 冲突攻击玩家，需手动调整。
 
+📚 详细文档
+- [点击查看完整教程 Wiki](https://github.com/你的用户名/Startres-Mod/wiki)  
+
