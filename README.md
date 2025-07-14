@@ -16,7 +16,9 @@
 支持仇恨继承、目标优先级控制，兼容大部分原版及模组生物。
 提供 Buff 控制化身持续时间，结束时自动消失。
 
-安装
+🚀 快速开始
+Forge 47.4.0
+minecraft 1.20.1
 下载 startres-x.x.x.jar 放入 mods 文件夹。
 在 KubeJS 脚本中调用 API。
 
