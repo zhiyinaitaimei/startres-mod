@@ -11,16 +11,16 @@
 1. 摄像机视角绑定
 通过 KubeJS 将玩家视角绑定到任意实体（模组提供了一个专门用于绑定玩家视角的相机实体）。
 
-2. 化身战斗系统
-拥有标签: incarnation 和 incarnation_owner_<ownerUUID> 的实体自动协助玩家作战。
-支持仇恨继承、目标优先级控制，兼容大部分原版及模组生物。
-提供 Buff 控制化身持续时间，结束时自动消失。
+2. 化身战斗系统   
+拥有标签: incarnation 和 incarnation_owner_<ownerUUID> 的实体自动协助玩家作战。   
+支持仇恨继承、目标优先级控制，兼容大部分原版及模组生物。   
+提供 Buff 控制化身持续时间，结束时自动消失。   
 
 🚀 快速开始
-Forge 47.4.0
-minecraft 1.20.1
-下载 startres-x.x.x.jar 放入 mods 文件夹。
-在 KubeJS 脚本中调用 API。
+Forge 47.4.0+   
+minecraft 1.20.1   
+下载 startres-x.x.x.jar 放入 mods 文件夹。   
+在 KubeJS 脚本中调用 API。   
 
 ⚠️ 注意事项
 少量生物可能因原生 AI 冲突攻击玩家，需手动调整。
