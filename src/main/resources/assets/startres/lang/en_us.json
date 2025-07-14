@@ -1,0 +1,19 @@
+{
+  "effect.startres.incarnation_life": "Incarnation Duration",
+  "effect.startres.immune_all_neg": "Pure Body",
+  "effects.startres.incarnation_cd": "Incarnation Summon Cooldown",
+  "effect.startres.incarnation_no_fall": "Fall Immunity",
+  "config.startres.incarnation.follow_distance": "Follow Distance",
+  "config.startres.incarnation.stop_follow_distance": "Stop Follow Distance",
+  "config.startres.incarnation.follow_speed": "Follow Speed",
+  "config.startres.incarnation.enable_teleport": "Enable Teleportation",
+  "config.startres.incarnation.teleport_distance": "Teleport Distance",
+  "config.startres.incarnation.wander_range": "Wander Range",
+  "incarnation.mode.follow": "Follow Mode",
+  "incarnation.mode.idle": "Idle Mode",
+  "incarnation.mode.wander": "Wander Mode",
+  "incarnation.mode.switch": "Incarnation mode switched to: %s",
+  "config.startres.incarnation.mode_switch_enabled": "Allow Incarnation Mode Switching (Shift+Right Click)",
+  "config.startres.incarnation.bossbar_hide_prefix": "Prefix required to hide boss bar",
+  "config.startres.incarnation.hide_bossbar": "Hide Incarnation Boss Bar"
+}

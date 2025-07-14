@@ -1,0 +1,20 @@
+{
+  "effect.startres.incarnation_life":"化身持续时间",
+  "effect.startres.immune_all_neg": "恒净之躯",
+  "effects.startres.incarnation_cd":"化召唤冷却",
+    "effect.startres.incarnation_no_fall": "免疫跌落",
+  "config.startres.incarnation.follow_distance": "跟随距离",
+  "config.startres.incarnation.stop_follow_distance": "停止跟随距离",
+  "config.startres.incarnation.follow_speed": "跟随速度",
+  "config.startres.incarnation.enable_teleport": "启用传送",
+  "config.startres.incarnation.teleport_distance": "传送距离",
+  "config.startres.incarnation.wander_range": "游荡范围",
+  "incarnation.mode.follow": "跟随模式",
+  "incarnation.mode.idle": "待机模式",
+  "incarnation.mode.wander": "游荡模式",
+  "incarnation.mode.switch": "化身模式切换为: %s",
+  "config.startres.incarnation.mode_switch_enabled":"是否允许化身切换模式（Shift+右键）",
+  "config.startres.incarnation.bossbar_hide_prefix":"隐藏boss血条需要的前缀名称",
+  "config.startres.incarnation.hide_bossbar": "隐藏化身 Boss 血条"
+
+}
