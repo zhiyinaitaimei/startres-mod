@@ -26,5 +26,6 @@ minecraft 1.20.1
 少量生物可能因原生 AI 冲突攻击玩家，需手动调整。
 
 📚 详细文档
-- [点击查看完整教程 Wiki](https://github.com/zhiyinaitaimei/Startres-Mod/wiki)  
+- [中文 Wiki](https://github.com/zhiyinaitaimei/Startres-Mod/wiki/zh_首页)
+- [English Wiki](https://github.com/zhiyinaitaimei/Startres-Mod/wiki/en_Home)  
 
