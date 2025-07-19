@@ -57,3 +57,4 @@ public class EnhancedBossBarHider {
         return false;
     }
 }
+
