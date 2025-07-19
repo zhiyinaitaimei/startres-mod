@@ -52,7 +52,7 @@ public class IncarnationConfig {
                                 .translation("config.startres.incarnation.wander_range")
                                 .defineInRange("wander_range", 8.0, 1.0, 50.0);
 
-                MODE_SWITCH_ENABLED = builder.comment("是否允许化身切换模式（Shift+右键）")
+                MODE_SWITCH_ENABLED = builder.comment("是否允许化身切换模式（Shift+右键）实验功能!可能导致坏档！")
                                 .translation("config.startres.incarnation.mode_switch_enabled")
                                 .define("mode_switch_enabled", false);
 
