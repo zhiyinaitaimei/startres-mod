@@ -13,7 +13,7 @@
   "incarnation.mode.idle": "待机模式",
   "incarnation.mode.wander": "游荡模式",
   "incarnation.mode.switch": "化身模式切换为: %s",
-  "config.startres.incarnation.mode_switch_enabled":"是否允许化身切换模式（Shift+右键）",
+  "config.startres.incarnation.mode_switch_enabled":"允许Shift+右键切换化身模式（切换Boss化身可能导致坏档）",
   "config.startres.incarnation.bossbar_hide_prefix":"隐藏boss血条需要的前缀名称",
   "config.startres.incarnation.hide_bossbar": "隐藏化身 Boss 血条"
 
