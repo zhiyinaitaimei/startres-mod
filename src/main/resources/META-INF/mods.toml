@@ -3,7 +3,7 @@ loaderVersion="[47,)"
 license="MIT"
 [[mods]]
 modId="startres"
-version="1.0.0"
+version="1.0.1"
 displayName="startres"
 authors="zhiyinaitaimei"
 description='''为 KubeJS 提供玩家视角绑定与化身战斗系统'''
