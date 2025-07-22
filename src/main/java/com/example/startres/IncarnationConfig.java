@@ -25,6 +25,10 @@ public class IncarnationConfig {
 
         public static final ForgeConfigSpec.BooleanValue HIDE_INCARNATION_BOSSBAR;
 
+        // PVP配置
+        public static final ForgeConfigSpec.BooleanValue PVP_ENABLED;
+        public static final ForgeConfigSpec.BooleanValue INCARNATION_ATTACK_PLAYERS;
+
         static {
                 ForgeConfigSpec.Builder builder = new ForgeConfigSpec.Builder();
 
@@ -65,6 +69,15 @@ public class IncarnationConfig {
                                 .translation("config.startres.incarnation.bossbar_hide_prefix")
                                 .define("bossbar_hide_prefix", "化身:");
 
+                PVP_ENABLED = builder.comment("是否启用PVP功能")
+                                .translation("config.startres.pvp.enabled")
+                                .define("pvp_enabled", false);
+
+                INCARNATION_ATTACK_PLAYERS = builder.comment("化身是否可以攻击玩家（PVP关闭时化身永远不会攻击玩家）")
+                                .translation("config.startres.pvp.incarnation_attack_players")
+                                .define("incarnation_attack_players", false);
+
                 COMMON_CONFIG = builder.build();
         }
 }
+
