@@ -30,7 +30,7 @@ public class IncarnationFollowOwnerGoal extends Goal {
         if (player == null)
             return false;
         this.owner = player;
-        // 跟随距离
+        // 使用配置文件中的跟随距离
         return mob.distanceTo(owner) > IncarnationConfig.FOLLOW_DISTANCE.get() && mob.getTarget() == null;
     }
 
@@ -52,9 +52,10 @@ public class IncarnationFollowOwnerGoal extends Goal {
             Player owner = mob.level().getPlayerByUUID(ownerUUID);
             if (owner != null) {
                 double dist = mob.distanceTo(owner);
-                // 传送距离和开关
+                // 使用配置文件中的传送距离和开关
                 if (IncarnationConfig.ENABLE_TELEPORT.get() && dist > IncarnationConfig.TELEPORT_DISTANCE.get()) {
                     mob.teleportTo(owner.getX(), owner.getY(), owner.getZ());
+                    // 可加特效/音效
                 }
             }
         }
