@@ -15,5 +15,7 @@
   "incarnation.mode.switch": "Incarnation mode switched to: %s",
   "config.startres.incarnation.mode_switch_enabled": "Enable mode switching (Shift+Right-Click) (Warning: May corrupt saves with boss incarnations)",
   "config.startres.incarnation.bossbar_hide_prefix": "Prefix required to hide boss bar",
-  "config.startres.incarnation.hide_bossbar": "Hide Incarnation Boss Bar"
+  "config.startres.incarnation.hide_bossbar": "Hide Incarnation Boss Bar",
+    "config.startres.pvp.enabled": "Enable PVP",
+  "config.startres.pvp.incarnation_attack_players": "Incarnations Can Attack Players"
 }
