@@ -15,6 +15,7 @@ public class IncarnationAIHelper {
             mob.addTag("incarnation");
         }
 
+        // 标记为已通过KubeJS正确设置，避免备用tick检查
         mob.addTag("incarnation_ai_injected");
 
         // 设置模式标签
@@ -45,21 +46,22 @@ public class IncarnationAIHelper {
     }
 
     private static void injectCustomAI(Mob mob) {
+        // 添加化身专用目标选择AI（最高优先级）
         if (!hasGoalOfType(mob.targetSelector.getAvailableGoals(), IncarnationTargetGoal.class)) {
             mob.targetSelector.addGoal(1, new IncarnationTargetGoal(mob));
         }
 
-        // 跟随AI
+        // 添加跟随AI
         if (!hasGoalOfType(mob.goalSelector.getAvailableGoals(), IncarnationFollowOwnerGoal.class)) {
             mob.goalSelector.addGoal(2, new IncarnationFollowOwnerGoal(mob));
         }
 
-        // 游荡AI
+        // 添加游荡AI
         if (!hasGoalOfType(mob.goalSelector.getAvailableGoals(), IncarnationWanderGoal.class)) {
             mob.goalSelector.addGoal(3, new IncarnationWanderGoal(mob));
         }
 
-        // 待机AI
+        // 添加待机AI
         if (!hasGoalOfType(mob.goalSelector.getAvailableGoals(), IncarnationIdleGoal.class)) {
             mob.goalSelector.addGoal(0, new IncarnationIdleGoal(mob));
         }
@@ -73,9 +75,11 @@ public class IncarnationAIHelper {
                 break;
             case "wander":
                 // 游荡模式：设置当前位置为中心点
+                // 这里可以添加特定的游荡设置
                 break;
             case "follow":
             default:
+                // 跟随模式：默认行为，无需特殊设置
                 break;
         }
     }

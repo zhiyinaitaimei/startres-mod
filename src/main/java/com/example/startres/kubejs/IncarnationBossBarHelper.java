@@ -8,15 +8,10 @@ import java.util.concurrent.ConcurrentHashMap;
 
 public class IncarnationBossBarHelper {
 
+    // 缓存反射结果
     private static final Map<Class<?>, Field> BOSS_EVENT_FIELD_CACHE = new ConcurrentHashMap<>();
     private static final Map<Class<?>, Method> SET_VISIBLE_METHOD_CACHE = new ConcurrentHashMap<>();
 
-    /**
-     * 在KubeJS召唤化身后立即调用
-     * 
-     * @param entity 要隐藏boss血条的实体
-     * @return 是否成功隐藏了boss血条
-     */
     public static boolean hideIncarnationBossBar(Entity entity) {
         if (entity == null)
             return false;
@@ -26,11 +21,13 @@ public class IncarnationBossBarHelper {
             entity.addTag("incarnation");
         }
 
+        // 标记为已通过KubeJS正确设置，避免备用tick检查
         entity.addTag("incarnation_bossbar_handled");
 
         try {
             Class<?> entityClass = entity.getClass();
 
+            // 使用缓存的反射字段
             Field bossEventField = BOSS_EVENT_FIELD_CACHE.computeIfAbsent(entityClass, clazz -> {
                 Class<?> currentClass = clazz;
                 while (currentClass != null) {
@@ -48,6 +45,7 @@ public class IncarnationBossBarHelper {
             if (bossEventField != null) {
                 Object bossEvent = bossEventField.get(entity);
                 if (bossEvent != null) {
+                    // 使用缓存的反射方法
                     Method setVisible = SET_VISIBLE_METHOD_CACHE.computeIfAbsent(bossEvent.getClass(), clazz -> {
                         try {
                             return clazz.getMethod("setVisible", boolean.class);
@@ -122,7 +120,6 @@ public class IncarnationBossBarHelper {
                 return bossEvent != null;
             }
         } catch (Exception e) {
-            // 静默处理异常
         }
 
         return false;
@@ -132,4 +129,4 @@ public class IncarnationBossBarHelper {
         BOSS_EVENT_FIELD_CACHE.clear();
         SET_VISIBLE_METHOD_CACHE.clear();
     }
-} // 清理缓存
+}
